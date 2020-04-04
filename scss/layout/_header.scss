@@ -1,0 +1,59 @@
+.header{
+  margin-bottom: 0px;
+  &__barList{
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  &__nav__link{
+    display: inline-block;
+  }
+}
+
+.menu{
+  padding-right: 10px;
+  &--link a{
+    color: #00cc99;
+    text-decoration: none;
+    padding: 13px 10px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    display: inline-block;
+    &:hover{
+      border-bottom-color: #00cc99;
+    }
+  }
+  &__item{
+    margin-right: 25px;
+    &:last-child{
+      margin-right: 0px;
+    }
+    &--active a {
+      border-bottom-color: #00cc99;
+    }
+  }
+}
+
+
+.communityList{
+  a {
+    text-decoration: none;
+    &:hover {
+      color: #000;
+    }
+    img {
+      margin-right: 3px;
+    }
+  }
+  &--fb a {
+    color: #4460A0;
+    padding-right: 6px;
+    margin-right: 6px;
+    border-right: 1px #cccccc solid;
+  }
+  &--wt a {
+    color: #00AAEC;
+  }
+}
+
+

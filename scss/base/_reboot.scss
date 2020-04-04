@@ -1,0 +1,35 @@
+*, 
+*::before, 
+*::after {
+	box-sizing: border-box;
+}
+body{
+	font-family: '微軟正黑體', 'Microsoft JhengHei', Tahoma, verdana, STHeiti, serif, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	font-weight: 300;
+	color: #333;
+}
+img{ 
+	vertical-align: bottom; 
+}
+textarea, label, input{
+	width: 100%;
+	display: block;
+}
+input, textarea, button{
+	border-width: 0;
+}
+label{
+	margin-bottom: 5px;
+}
+input{
+	padding: 6px 10px;
+	color: #333;
+	font-size: 15px;
+}
+textarea{
+	padding: 8px 10px;
+	color: #333;
+	font-size: 15px;
+}
