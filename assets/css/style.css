@@ -1,0 +1,477 @@
+@charset "UTF-8";
+/*
+  ? VS Code 插件 SASS Variables 需透過 '// COLORS' 與 '// END COLORS' 標記範圍才可引入使用
+  - 色彩英文命名：https://www.ebaomonthly.com/window/photo/lesson/colorList.htm
+*/
+/* base
+-------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: '微軟正黑體', 'Microsoft JhengHei', Tahoma, verdana, STHeiti, serif, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #333;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+textarea, label, input {
+  width: 100%;
+  display: block;
+}
+
+input, textarea, button {
+  border-width: 0;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 6px 10px;
+  color: #333;
+  font-size: 15px;
+}
+
+textarea {
+  padding: 8px 10px;
+  color: #333;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.h1 {
+  font-size: 34px;
+  line-height: 1.4;
+  letter-spacing: 2px;
+  font-family: serif;
+  font-weight: bolder;
+}
+
+.h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.font-s {
+  font-size: 14px;
+}
+
+/* End of base
+-------------------------------------------------- */
+/* layout
+-------------------------------------------------- */
+.wrap {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.header {
+  margin-bottom: 0px;
+}
+
+.header__barList {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.header__nav__link {
+  display: inline-block;
+}
+
+.menu {
+  padding-right: 10px;
+}
+
+.menu--link a {
+  color: #00cc99;
+  text-decoration: none;
+  padding: 13px 10px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  display: inline-block;
+}
+
+.menu--link a:hover {
+  border-bottom-color: #00cc99;
+}
+
+.menu__item {
+  margin-right: 25px;
+}
+
+.menu__item:last-child {
+  margin-right: 0px;
+}
+
+.menu__item--active a {
+  border-bottom-color: #00cc99;
+}
+
+.communityList a {
+  text-decoration: none;
+}
+
+.communityList a:hover {
+  color: #333;
+}
+
+.communityList a img {
+  margin-right: 3px;
+}
+
+.communityList--fb a {
+  color: #4460A0;
+  padding-right: 6px;
+  margin-right: 6px;
+  border-right: 1px #ccc solid;
+}
+
+.communityList--wt a {
+  color: #00AAEC;
+}
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* End of layout
+-------------------------------------------------- */
+/* Block
+-------------------------------------------------- */
+.banner {
+  width: 1000px;
+  height: 345px;
+  margin-bottom: 64px;
+}
+
+.banner--bg {
+  background-image: url("/assets/img/banner.png");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner__link {
+  background-color: rgba(0, 0, 0, 0.15);
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-left: 22px;
+  text-decoration: none;
+}
+
+.course {
+  padding: 0px 20px;
+  margin-bottom: 64px;
+}
+
+.course__item {
+  width: 298px;
+  padding-bottom: 24px;
+}
+
+.course__item img {
+  width: 100%;
+}
+
+.course__item__title {
+  margin-bottom: 5px;
+}
+
+.course__item__string {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+  text-justify: inter-character;
+}
+
+.info__title {
+  margin-bottom: 25px;
+}
+
+.info__table {
+  width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* End of Block
+-------------------------------------------------- */
+/* components
+-------------------------------------------------- */
+.table {
+  margin-bottom: 62px;
+}
+
+.table__thand {
+  -moz-text-align-last: left;
+       text-align-last: left;
+  background-color: #f6f6f6;
+}
+
+.table__thead__tr, .table__tbody__tr {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.table__thead__tr__th, .table__tbody__tr__td {
+  padding: 8px 25px;
+}
+
+.form {
+  background-color: gray;
+  padding-top: 38px;
+  padding-bottom: 28px;
+}
+
+.form__title {
+  margin-bottom: 28px;
+}
+
+.form__row__col {
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.textarea-resizeNone {
+  resize: none;
+}
+
+.c-btn {
+  display: inline-block;
+  padding: 6px 22px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.c-btn:hover {
+  background-color: #e12d80;
+}
+
+.c-btn:active {
+  background-color: #333;
+}
+
+.c-btn--primary {
+  color: #fff;
+  background-color: #00cc99;
+}
+
+.c-btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+/* End of components
+-------------------------------------------------- */
+/* utilities
+-------------------------------------------------- */
+/*----------  flex  ----------*/
+.u-d-flex {
+  display: flex;
+}
+
+/*----------  /flex  ----------*/
+/*----------  flex-direction  ----------*/
+.u-flexDirection--row {
+  flex-direction: row;
+}
+
+.u-flexDirection--column {
+  flex-direction: column;
+}
+
+.u-flexDirection--rowReverse {
+  flex-direction: row-reverse;
+}
+
+.u-flexDirection--columnReverse {
+  flex-direction: column-reverse;
+}
+
+/*----------  flex-direction  ----------*/
+/*----------  justify-content  ----------*/
+.u-justifyContent--flexStart {
+  justify-content: flex-start;
+}
+
+.u-justifyContent--center {
+  justify-content: center;
+}
+
+.u-justifyContent--flexEnd {
+  justify-content: flex-end;
+}
+
+.u-justifyContent--spaceAround {
+  justify-content: space-around;
+}
+
+.u-justifyContent--spaceBetween {
+  justify-content: space-between;
+}
+
+.u-justifyContent--spaceEvenly {
+  justify-content: space-evenly;
+}
+
+/*----------  /justify-content  ----------*/
+/*----------  align-items  ----------*/
+.u-alignItems--flexStart {
+  align-items: flex-start;
+}
+
+.u-alignItems--flexEnd {
+  align-items: flex-end;
+}
+
+.u-alignItems--center {
+  align-items: center;
+}
+
+/*----------  /align-items  ----------*/
+/*----------  flexWrap  ----------*/
+.u-flexWrap--nowrap {
+  flex-wrap: nowrap;
+}
+
+.u-flexWrap--wrap {
+  flex-wrap: wrap;
+}
+
+/*----------  /flexWrap  ----------*/
+.u-textA-center {
+  text-align: center;
+}
+
+.u-textA-right {
+  text-align: right;
+}
+
+/* text-colors
+-------------------------------------------------- */
+.u-textC--primaryDark {
+  color: #00a67d;
+}
+
+.u-textC--white {
+  color: #fff;
+}
+
+/* End of text-colors
+-------------------------------------------------- */
+/* Subsection-color
+-------------------------------------------------- */
+.u-bg--lightGray {
+  background-color: #f6f6f6;
+}
+
+.u-bg--white {
+  background-color: #fff;
+}
+
+.u-bg--primaryToDark {
+  background: linear-gradient(0deg, #009771 0%, #00644b 75%);
+}
+
+/* End of Subsection-color
+-------------------------------------------------- */
+.u-link--notice {
+  color: #e12d80;
+}
+
+.u-link--notice:hover, .u-link--notice :focus {
+  color: #333;
+}
+
+.u-minH-100vh {
+  min-height: 100vh;
+}
+
+.u-rounded-3 {
+  border-radius: 3px;
+}
+
+.u-boxShadow {
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* End of utilities
+-------------------------------------------------- */
+
+/*# sourceMappingURL=style.css.map */
