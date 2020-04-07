@@ -1,18 +1,21 @@
-.banner{
-	width: 1000px;
+.p-banner{
+	// width: 1000px;
 	height: 345px;
-	margin-bottom: 64px;
+	// margin-bottom: 64px;
 	&--bg{
 		background-image: url('../../assets/img/banner.png');
 		background-size: 100% auto;
-		background-position: center;
+		background-size: cover;
+		background-position: center right;
 		background-repeat: no-repeat;
 	}
 	&__link{
-		background-color: rgba(0,0,0,0.15);
-		padding-top: 36px;
-		padding-bottom: 36px;
-		padding-left: 22px;
+		// padding-top: 36px;
+		// padding-bottom: 36px;
+		// padding-left: 22px;
 		text-decoration: none;
+		&--bgc{
+			background-color: rgba(0,0,0,0.15);
+		}
 	}
 }

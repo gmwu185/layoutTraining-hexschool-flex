@@ -10,6 +10,30 @@
 -------------------------------------------------- */
 
 
+/* components
+-------------------------------------------------- */
+@import 'components/table';
+@import 'components/form';
+@import 'components/btn';
+/* End of components
+-------------------------------------------------- */
+
+
+/* utilities
+-------------------------------------------------- */
+@import 'utils/flex';
+@import 'utils/text';
+@import 'utils/verticalAlign';
+@import 'utils/color';
+@import 'utils/link';
+@import 'utils/sizing';
+@import 'utils/spacing';
+@import 'utils/rounded';
+@import 'utils/shadow';
+/* End of utilities
+-------------------------------------------------- */
+
+
 /* layout
 -------------------------------------------------- */
 @import 'layout/grid';
@@ -28,23 +52,3 @@
 -------------------------------------------------- */
 
 
-/* components
--------------------------------------------------- */
-@import 'components/table';
-@import 'components/form';
-@import 'components/btn';
-/* End of components
--------------------------------------------------- */
-
-
-/* utilities
--------------------------------------------------- */
-@import 'utils/flex';
-@import 'utils/text';
-@import 'utils/color';
-@import 'utils/link';
-@import 'utils/sizing';
-@import 'utils/rounded';
-@import 'utils/shadow';
-/* End of utilities
--------------------------------------------------- */

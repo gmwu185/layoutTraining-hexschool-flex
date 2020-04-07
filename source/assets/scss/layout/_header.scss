@@ -1,7 +1,7 @@
-.header{
-  margin-bottom: 0px;
+.l-header{
+  // margin-bottom: 0px;
   &__barList{
-    padding: 6px 12px;
+    // padding: 6px 12px;
     font-size: 14px;
   }
   &__nav__link{
@@ -9,12 +9,12 @@
   }
 }
 
-.menu{
-  padding-right: 10px;
+.l-menu{
+  // padding-right: 10px;
   &--link a{
     color: $primaryColor;
     text-decoration: none;
-    padding: 13px 10px;
+    // padding: 13px 10px;
     border-bottom-width: 3px;
     border-bottom-style: solid;
     border-bottom-color: transparent;
@@ -24,10 +24,10 @@
     }
   }
   &__item{
-    margin-right: 25px;
-    &:last-child{
-      margin-right: 0px;
-    }
+    // margin-right: 25px;
+    // &:last-child{
+    //   margin-right: 0px;
+    // }
     &--active a {
       border-bottom-color: $primaryColor;
     }
@@ -35,20 +35,20 @@
 }
 
 
-.communityList{
+.l-communityList{
   a {
     text-decoration: none;
     &:hover {
       color: $blackColor;
     }
-    img {
-      margin-right: 3px;
-    }
+    // img {
+    //   margin-right: 3px;
+    // }
   }
   &--fb a {
     color: $facebookColor;
-    padding-right: 6px;
-    margin-right: 6px;
+    // padding-right: 6px;
+    // margin-right: 6px;
     border-right: 1px $GainsboroColor solid;
   }
   &--wt a {
