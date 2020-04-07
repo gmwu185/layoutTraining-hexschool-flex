@@ -1,51 +1,29 @@
 
 /* text-colors
 -------------------------------------------------- */
-
-a.text-white, .text-white{
-	color: #fff ;
-	text-decoration: none;
+.u-textC{
+	&--primaryDark{
+		color: $primaryDarkColor;
+	}
+	&--white{
+		color: $whiteColor;
+	}
 }
-a.text-white:hover, a.text-white:focus{
-	color: #333333;
-}
-a.text-primary, .text-primary{
-	color: #00a67d;
-	text-decoration: none;
-}
-a.text-primary:hover, a.text-primary:focus{
-	color: #333333;
-}
-.text-primaryDark{
-	color: #00a67d;
-}
-a.text-notice, .text-notice{
-	color: #e12d80;
-	text-decoration: none;
-}
-a.text-notice:hover, a.text-notice:focus{
-	color: #333333;
-}
-
 /* End of text-colors
 -------------------------------------------------- */
 
-
 /* Subsection-color
 -------------------------------------------------- */
-
-.bg-gray{
-	background-color: gray;
+.u-bg{
+	&--lightGray{
+		background-color: $lightGrayColor;
+	}
+	&--white{
+		background-color: $whiteColor;
+	}
+	&--primaryToDark{
+		background: linear-gradient(0deg, $primaryGrayColor 0%, $primaryDimgrayColor 75%);
+	}
 }
-.bg-lightGray{
-	background-color: #f6f6f6;
-}
-.bg-white{
-	background-color: white;
-}
-.bg-gradient--primaryToDark{
-	background: linear-gradient(0deg, #009771 0%, #00644b 75%);
-}
-
 /* End of Subsection-color
 -------------------------------------------------- */

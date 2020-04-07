@@ -1,27 +1,28 @@
 {
-  "liveSassCompile.settings.formats":[
-    // This is Default.
-    // {
-    //     "format": "expanded",
-    //     "extensionName": ".css",
-    //     "savePath": "~/../css/"
-    // },
-    // You can add more
-    {
-        "format": "compressed",
-        "extensionName": ".css",
-        "savePath": "~/../css/"
-    },
-    // More Complex
-    // {
-    //     "format": "compressed",
-    //     "extensionName": ".css",
-    //     "savePath": "~/../css/"
-    // }
-  ],
-  "liveSassCompile.settings.autoprefix": [
-    "> 1%",
-    "Last 3 versions",
-    "iOS 8"
-  ],
+  // "liveSassCompile.settings.formats":[
+  //   // This is Default.
+  //   // {
+  //   //     "format": "expanded",
+  //   //     "extensionName": ".css",
+  //   //     "savePath": "~/../css/"
+  //   // },
+  //   // You can add more
+  //   {
+  //       "format": "compressed",
+  //       "extensionName": ".css",
+  //       "savePath": "~/../css/"
+  //   },
+  //   // More Complex
+  //   // {
+  //   //     "format": "compressed",
+  //   //     "extensionName": ".css",
+  //   //     "savePath": "~/../css/"
+  //   // }
+  // ],
+  // "liveSassCompile.settings.autoprefix": [
+  //   "> 1%",
+  //   "Last 3 versions",
+  //   "iOS 8"
+  // ],
+  "sassVariablesHelper.route": "/source/assets/scss/_variables.scss",
 }

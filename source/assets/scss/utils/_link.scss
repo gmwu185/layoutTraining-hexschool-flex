@@ -1,0 +1,8 @@
+.u-link{
+	&--notice{
+		color: $noticeColor;
+		&:hover, :focus{
+			color: $blackColor;
+		}
+	}
+}

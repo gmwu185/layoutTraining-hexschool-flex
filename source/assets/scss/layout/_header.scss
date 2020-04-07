@@ -12,7 +12,7 @@
 .menu{
   padding-right: 10px;
   &--link a{
-    color: #00cc99;
+    color: $primaryColor;
     text-decoration: none;
     padding: 13px 10px;
     border-bottom-width: 3px;
@@ -20,7 +20,7 @@
     border-bottom-color: transparent;
     display: inline-block;
     &:hover{
-      border-bottom-color: #00cc99;
+      border-bottom-color: $primaryColor;
     }
   }
   &__item{
@@ -29,7 +29,7 @@
       margin-right: 0px;
     }
     &--active a {
-      border-bottom-color: #00cc99;
+      border-bottom-color: $primaryColor;
     }
   }
 }
@@ -39,20 +39,20 @@
   a {
     text-decoration: none;
     &:hover {
-      color: #000;
+      color: $blackColor;
     }
     img {
       margin-right: 3px;
     }
   }
   &--fb a {
-    color: #4460A0;
+    color: $facebookColor;
     padding-right: 6px;
     margin-right: 6px;
-    border-right: 1px #cccccc solid;
+    border-right: 1px $GainsboroColor solid;
   }
   &--wt a {
-    color: #00AAEC;
+    color: $twitterColor;
   }
 }
 

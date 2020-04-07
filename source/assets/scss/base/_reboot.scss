@@ -8,7 +8,7 @@ body{
 	font-size: 15px;
 	line-height: 1.5;
 	font-weight: 300;
-	color: #333;
+	color: $blackColor;
 }
 img{ 
 	vertical-align: bottom; 
@@ -25,11 +25,14 @@ label{
 }
 input{
 	padding: 6px 10px;
-	color: #333;
+	color: $blackColor;
 	font-size: 15px;
 }
 textarea{
 	padding: 8px 10px;
-	color: #333;
+	color: $blackColor;
 	font-size: 15px;
+}
+a{
+	text-decoration: none;
 }

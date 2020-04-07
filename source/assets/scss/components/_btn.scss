@@ -1,19 +1,21 @@
-.btn{
+.c-btn{
 	display: inline-block;
 	padding: 6px 22px;
 	font-size: 15px;
 	font-weight: bolder;
-	&-primary{
-		color: #ffffff;
-		background-color: #00cc99;
-	}
 	&:hover{
-		background-color: #e12d80;
+		background-color: $noticeColor;
 	}
 	&:active{
-		background-color: #333;
+		background-color: $blackColor;
 	}
+
+	&--primary{
+		color: $whiteColor;
+		background-color: $primaryColor;
+	}
+	
 }
-.btn:not(:disabled):not(.disabled){
+.c-btn:not(:disabled):not(.disabled){
 	cursor: pointer;
 }

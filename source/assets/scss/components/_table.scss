@@ -2,11 +2,11 @@
 	margin-bottom: 62px;
 	&__thand{
 		text-align-last: left;
-		background-color: #f7f7f7;
+		background-color: $lightGrayColor;
 	}
 	&__thead__tr, &__tbody__tr{
-		border-top: 1px solid #ccc;
-		border-bottom: 1px solid #ccc;
+		border-top: 1px solid $GainsboroColor;
+		border-bottom: 1px solid $GainsboroColor;
 	}
 	&__thead__tr__th, &__tbody__tr__td{
 		padding: 8px 25px;

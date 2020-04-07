@@ -1,0 +1,20 @@
+/*
+  ? VS Code 插件 SASS Variables 需透過 '// COLORS' 與 '// END COLORS' 標記範圍才可引入使用
+  - 色彩英文命名：https://www.ebaomonthly.com/window/photo/lesson/colorList.htm
+*/
+// COLORS
+// 主色與相關色彩
+$primaryColor: #00cc99;
+$primaryDarkColor: #00a67d;
+$primaryGrayColor: #009771;
+$primaryDimgrayColor: #00644b;
+$noticeColor: #e12d80;
+$facebookColor: #4460A0;
+$twitterColor: #00AAEC;
+// 灰階
+$blackColor: #333;
+$grayColor: gray;
+$GainsboroColor: #ccc;
+$lightGrayColor: #f6f6f6;
+$whiteColor: #fff;
+// END COLORS
