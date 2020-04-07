@@ -1,1 +1,12 @@
 /inbox
+
+# Npm & NodeJS
+node_modules/
+package-lock.json
+
+# Gulp 
+.tmp/
+bower_components/
+.publish
+build/
+output/
