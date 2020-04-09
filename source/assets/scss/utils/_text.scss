@@ -1,8 +1,18 @@
-.u-textA{
-	&--center{
-		text-align: center;
+.u-text{
+	&-align{
+		&--center{
+			text-align: center;
+		}
+		&--right{
+			text-align: right;
+		}
+		&--justify{
+			text-align: justify;
+		}
 	}
-	&--right{
-		text-align: right;
+	&-justify{
+		&--interCharacter{
+			text-justify: inter-character;
+		}
 	}
 }

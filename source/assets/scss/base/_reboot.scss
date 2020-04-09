@@ -11,7 +11,9 @@ body{
 	color: $blackColor;
 }
 img{ 
-	vertical-align: bottom; 
+	vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
 }
 textarea, label, input{
 	width: 100%;

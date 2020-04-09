@@ -1,6 +1,11 @@
 /*----------  flex  ----------*/
-.u-d--flex{
-	display: flex;
+.u-d{
+  &--flex{
+    display: flex;
+  }
+  &--inlineBlock{
+    display: inline-block;
+  }
 }
 /*----------  /flex  ----------*/
 
@@ -58,6 +63,9 @@
   &--center{
     align-items: center;
   }
+  &--stretch{
+    align-items: stretch;
+  }
 }
 /*----------  /align-items  ----------*/
 
@@ -72,3 +80,4 @@
   }
 }
 /*----------  /flexWrap  ----------*/
+

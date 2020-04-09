@@ -36,39 +36,55 @@
   }
 
   &-colsSpacing{
+    $colsSpacingCardinalNum: 4;
 
     @for $i from 10 through 0 {
       &-px--#{$i}{
         [class^="l-fg-col"] {
-          padding: 0px $i+px;
+          padding: 0px ($i * $colsSpacingCardinalNum)+px;
+        }
+        > [class^="l-fg-col"] {
+          padding: 0px ($i * $colsSpacingCardinalNum)+px !important;
         }
       }
       &-py--#{$i}{
         [class^="l-fg-col"] {
-          padding: $i+px 0px;
+          padding: ($i * $colsSpacingCardinalNum)+px 0px;
+        }
+        > [class^="l-fg-col"] {
+          padding: ($i * $colsSpacingCardinalNum)+px 0px !important;
         }
       }
       &-p--#{$i}{
         [class^="l-fg-col"] {
-          padding: $i+px;
+          padding: ($i * $colsSpacingCardinalNum)+px;
+        }
+        > [class^="l-fg-col"] {
+          padding: ($i * $colsSpacingCardinalNum)+px !important;
         }
       }
-    }
-
-    @for $i from 10 through 0 {
       &-mx--#{$i}{
         [class^="l-fg-col"] {
-          margin: 0px $i+px;
+          margin: 0px ($i * $colsSpacingCardinalNum)+px;
+        }
+        > [class^="l-fg-col"] {
+          margin: 0px ($i * $colsSpacingCardinalNum)+px !important;
         }
       }
       &-my--#{$i}{
         [class^="l-fg-col"] {
-          margin: $i+px 0px;
+          margin: ($i * $colsSpacingCardinalNum)+px 0px;
+        }
+        > [class^="l-fg-col"] {
+          margin: ($i * $colsSpacingCardinalNum)+px 0px !important;
         }
       }
       &-m--#{$i}{
         [class^="l-fg-col"] {
-          margin: $i+px;
+          margin: ($i * $colsSpacingCardinalNum)+px;
+        }
+        > [class^="l-fg-col"] {
+          margin: ($i * $colsSpacingCardinalNum)+px !important;
         }
       }
     }
@@ -76,3 +92,10 @@
   }
 }
 
+/* 100% Width Columns on Small Screens */
+@media (max-width: 640px) {
+  [class^="l-fg-col"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
