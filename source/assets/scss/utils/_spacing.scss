@@ -2,69 +2,85 @@ $spacCardinalNum: 1;
 $spacUnit: px;
 @for $i from 0 through 40 {
   .u-p{
-    &-#{ ($i * $spacCardinalNum) } {
+    &--#{ ($i * $spacCardinalNum) } {
       padding:  ($i * $spacCardinalNum) + $spacUnit;
     }
-    &x-#{ ($i * $spacCardinalNum) } {
+    &x--#{ ($i * $spacCardinalNum) } {
       padding-left:  ($i * $spacCardinalNum) + $spacUnit;
       padding-right:  ($i * $spacCardinalNum) + $spacUnit;
     }
-    &y-#{ ($i * $spacCardinalNum) } {
+    &y--#{ ($i * $spacCardinalNum) } {
       padding-top:  ($i * $spacCardinalNum) + $spacUnit;
       padding-bottom:  ($i * $spacCardinalNum) + $spacUnit;
     }
-    &t-#{ ($i * $spacCardinalNum) } {
+    &t--#{ ($i * $spacCardinalNum) } {
       padding-top:  ($i * $spacCardinalNum) + $spacUnit;
     }
-    &b-#{ ($i * $spacCardinalNum) } {
+    &b--#{ ($i * $spacCardinalNum) } {
       padding-bottom:  ($i * $spacCardinalNum) + $spacUnit;
     }
-    &r-#{ ($i * $spacCardinalNum) } {
+    &r--#{ ($i * $spacCardinalNum) } {
       padding-right:  ($i * $spacCardinalNum) + $spacUnit;
     }
-    &l-#{ ($i * $spacCardinalNum) } {
+    &l--#{ ($i * $spacCardinalNum) } {
       padding-left:  ($i * $spacCardinalNum) + $spacUnit;
     }
   }
   .u-m{
-    &-#{ ($i * $spacCardinalNum) } {
+    &--#{ ($i * $spacCardinalNum) } {
       margin:  ($i * $spacCardinalNum) + $spacUnit;
     }
-    &x-#{ ($i * $spacCardinalNum) } {
+    &x--#{ ($i * $spacCardinalNum) } {
       margin-left:  ($i * $spacCardinalNum) + $spacUnit;
       margin-right:  ($i * $spacCardinalNum) + $spacUnit;
     }
-    &y-#{ ($i * $spacCardinalNum) } {
+    &y--#{ ($i * $spacCardinalNum) } {
       margin-top:  ($i * $spacCardinalNum) + $spacUnit;
       margin-bottom:  ($i * $spacCardinalNum) + $spacUnit;
     }
-    &t-#{ ($i * $spacCardinalNum) } {
+    &t--#{ ($i * $spacCardinalNum) } {
       margin-top:  ($i * $spacCardinalNum) + $spacUnit;
     }
-    &b-#{ ($i * $spacCardinalNum) } {
+    &b--#{ ($i * $spacCardinalNum) } {
       margin-bottom:  ($i * $spacCardinalNum) + $spacUnit;
     }
-    &r-#{ ($i * $spacCardinalNum) } {
+    &r--#{ ($i * $spacCardinalNum) } {
       margin-right:  ($i * $spacCardinalNum) + $spacUnit;
     }
-    &l-#{ ($i * $spacCardinalNum) } {
+    &l--#{ ($i * $spacCardinalNum) } {
       margin-left:  ($i * $spacCardinalNum) + $spacUnit;
     }
   }
 }
 
 // 較少用 margin 與 padding 不跑回圈獨立出來
-.u-mb-62{
+.u-mb--62{
   margin-bottom: 62px;
 }
-.u-mb-64{
+.u-mb--64{
   margin-bottom: 64px;
 }
-.u-pb-50{
+.u-pb--50{
   padding-bottom: 50px;
 }
 
-.u-mx-auto{
+
+
+
+.u-m--auto{
+  margin: auto;
+}
+.u-mx--auto{
   margin-left: auto;
   margin-right: auto;
+}
+.u-my--auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.u-ml--auto{
+  margin-right: auto;
+}
+.u-mr--auto{
+  margin-left: auto;
 }

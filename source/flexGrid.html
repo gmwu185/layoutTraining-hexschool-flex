@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>flex grid</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body class="u-minH--100vh u-d-flex u-alignItems--center u-justifyContent--center u-py--20 u-bg--lightGray">
+    <div class="l-fg-container l-fg-colsSpacing-p--5 u-bg--white u-boxShadow u-textA--center u-py--20">
+      
+      <h2 class="h2 u-textC--primaryDark">flex 自動針對子元件等分 (後方不帶 -- 等分數值)</h2>
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">l-fg-col</div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">l-fg-col</div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">l-fg-col</div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">l-fg-col</div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">l-fg-col</div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">l-fg-col</div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+      
+      <hr class="u-my--20">
+      <h2 class="h2 u-textC--primaryDark">透過等分操作</h2>
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col--2-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--2-1 ( 2 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 2 分之 1 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+      
+      <ol class="l-fg-row">
+        <li class="l-fg-col--3-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--3-1 ( 3 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 3 分之 2 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+      
+      <ol class="l-fg-row">
+        <li class="l-fg-col--4-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--4-1 ( 4 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 4 分之 3 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col--4-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--4-1 ( 4 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 4 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 4 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 4 分之 1 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+      
+      <ol class="l-fg-row">
+        <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--5-1 ( 5 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 5 分之 4 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--5-1 ( 5 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 5 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 5 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 5 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 5 分之 1 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+
+      
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col--6-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--6-1 ( 6 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 6 分之 5 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col--7-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--7-1 ( 7 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 7 分之 6 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col--8-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--8-1 ( 8 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 8 分之 7 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col--9-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--9-1 ( 9 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 9 分之 8 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col--10-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--10-1 ( 10 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 10 分之 9 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col--11-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--11-1 ( 11 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 11 分之 10 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 12 分之 11 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+      
+      <ol class="l-fg-row">
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col--12-3 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-3  ( 12 分之 3 )
+          </div>
+        </li>
+        
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col  ( 自動 12 分之 1 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+
+      <ol class="l-fg-row">
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+        <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+          <div class="u-bg--lightGray">
+            l-fg-col--12-1 ( 12 分之 1 )
+          </div>
+        </li>
+      </ol>
+      <!-- /.l-fg-row -->
+
+      <hr class="u-my--20">
+      <h2 class="h2 u-textC--primaryDark">操作子元件空間</h2>
+      <p class="u-mb--30">透過後代選擇的方式將啟用的 .l-fg-colsSpacing-m 與 .l-fg-colsSpacing-p 用於祖、父層，可以將所有使用 .l-fg-row 樣式名受到操作，<br> 數值單位 px 比重由大到小，小的數值比重要重，主要用於要使用 margin 要清出定位或是佔位空間使用考量。</p>
+      
+      <div class='u-mb--64'>
+        <h3 class="h3">所有子元件透過 margin left 與 right 的 10 px 自動於 .row 內平均寬度</h3>
+        <p> .l-fg-row 裡的子元件透過 .l-fg-col 元件數產生自動的格線數，在透過 margin 的個定數值佔住容器中的固定寬度後，<br>  .l-fg-col 自動元件會動計算子元件中的寬度自動平均寬度。</p>
+        <p>margin 無法使用 auto 來推出空間操作定位效果。</p>
+  
+        <ol class="l-fg-row l-fg-colsSpacing-mx--10 u-my--20">
+          <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">l-fg-col</div>
+          </li>
+          <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">l-fg-col</div>
+          </li>
+          <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">l-fg-col</div>
+          </li>
+        </ol>
+        <!-- /.l-fg-row -->
+        <ol class="l-fg-row l-fg-colsSpacing-mx--10 u-my--20">
+          <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">l-fg-col</div>
+          </li>
+          <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">l-fg-col</div>
+          </li>
+          <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">l-fg-col</div>
+          </li>
+          <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">l-fg-col</div>
+          </li>
+        </ol>
+        <!-- /.l-fg-row -->
+      </div>
+
+      <div class='u-mb--64'>
+        <h3 class="h3">透過後代選擇後蓋前特性，清除祖層元件空間設定</h3>
+        <p>使用 .l-fg-colsSpacing-p--0 與 .l-fg-colsSpacing-m--0 清除子元件空間，概念類工具類型的樣式使用。</p>
+
+        <ol class="l-fg-row l-fg-colsSpacing-p--0 u-my--20">
+          <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--12-1 ( 12 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--12-1 ( 12 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--12-1 ( 12 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--12-1 ( 12 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--12-1 ( 12 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--12-1 ( 12 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--12-1 ( 12 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--12-1 ( 12 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--12-1 ( 12 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--12-1 ( 12 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--12-1 ( 12 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--12-1 ( 12 分之 1 )
+            </div>
+          </li>
+        </ol>
+        <!-- /.l-fg-row -->
+      </div>
+
+      <div class="u-mb--64">
+
+        <h3 class="h3">指定子元件等分 margin 使用</h3>
+        <p>子元件等分 margin 配合使用無法讓子元件寬度自動，子元件寬度計算已有數值操作，操過父層容器會自動下移。</p>
+
+        <ol class="l-fg-row l-fg-colsSpacing-m--10 u-my--20">
+          <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--5-1 ( 5 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--5-1 ( 5 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--5-1 ( 5 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--5-1 ( 5 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--5-1 ( 5 分之 1 )
+            </div>
+          </li>
+        </ol>
+        <!-- /.l-fg-row -->
+  
+        <p>但因為有寬度數值可以透過 margin auto 來達成定位效果。</p>
+        <ol class="l-fg-row u-my--20">
+          <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--5-1 ( 5 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--5-1 ( 5 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--5-1 ( 5 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--5-1 ( 5 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
+            <div class="u-bg--lightGray">
+              l-fg-col--5-1 ( 5 分之 1 )
+            </div>
+          </li>
+          <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black u-mx--auto">
+            <div class="u-bg--lightGray">
+              l-fg-col--5-1 ( 5 分之 1 ) + u-mx--auto
+            </div>
+          </li>
+          <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black u-ml--auto">
+            <div class="u-bg--lightGray">
+              l-fg-col--5-1 ( 5 分之 1 ) + u-ml--auto
+            </div>
+          </li>
+          <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black u-mr--auto">
+            <div class="u-bg--lightGray">
+              l-fg-col--5-1 ( 5 分之 1 ) + u-mr--auto
+            </div>
+          </li>
+        </ol>
+        <!-- /.l-fg-row -->
+      </div>
+
+      
+
+      
+
+    </div>
+    <!-- /.l-fg-container -->
+
+    
+  </body>
+</html>

@@ -1,4 +1,78 @@
 .wrap{
-	// margin: 0 auto;
-	width: 1000px;
+  // margin: 0 auto;
+  width: 1000px;
 }
+
+.l-fg{
+  &-container{
+    margin: 0px auto;
+    width: 90%;
+    max-width: 1000px;
+  }
+  &-row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &-col{
+    flex: 1;
+    
+    // /**
+    // * * 樣式名稱使用 # {} (字符組要相近)
+    // * * $i 分母 1-5
+    // * * $j 分子 1-12
+    // *	* @if ( $i >= $j ) 判斷分子不大於分母
+    // */
+    @for $i from 1 through 12 {
+      @for $j from 1 through 12{
+        @if ( $i >= $j ){
+          &--#{$i}-#{$j}{
+            flex: 0 0  (100% * ( $j / $i));
+            max-width: (100% * ( $j / $i));
+          }
+        }
+      }
+    }
+  }
+
+  &-colsSpacing{
+
+    @for $i from 10 through 0 {
+      &-px--#{$i}{
+        [class^="l-fg-col"] {
+          padding: 0px $i+px;
+        }
+      }
+      &-py--#{$i}{
+        [class^="l-fg-col"] {
+          padding: $i+px 0px;
+        }
+      }
+      &-p--#{$i}{
+        [class^="l-fg-col"] {
+          padding: $i+px;
+        }
+      }
+    }
+
+    @for $i from 10 through 0 {
+      &-mx--#{$i}{
+        [class^="l-fg-col"] {
+          margin: 0px $i+px;
+        }
+      }
+      &-my--#{$i}{
+        [class^="l-fg-col"] {
+          margin: $i+px 0px;
+        }
+      }
+      &-m--#{$i}{
+        [class^="l-fg-col"] {
+          margin: $i+px;
+        }
+      }
+    }
+    
+  }
+}
+

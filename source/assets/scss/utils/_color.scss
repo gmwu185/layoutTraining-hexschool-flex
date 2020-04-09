@@ -15,6 +15,15 @@
 /* Subsection-color
 -------------------------------------------------- */
 .u-bg{
+	&--black{
+		background-color: $blackColor;
+	}
+	&--gray{
+		background-color: $grayColor;
+	}
+	&--gainsBoro{
+		background-color: $gainsBoroColor;
+	}
 	&--lightGray{
 		background-color: $lightGrayColor;
 	}
