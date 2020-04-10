@@ -1,3 +1,8 @@
+## 頁面連結
+- [flex grid](https://gmwu185.github.io/layoutTraining-hexschool-flex/flexGrid.html)
+- [主要頁面](https://gmwu185.github.io/layoutTraining-hexschool-flex/index.html)
+
+
 
 ## gulp 套件與版本說明
 - gulp 4 自動化執行前端檔案編譯與產出
