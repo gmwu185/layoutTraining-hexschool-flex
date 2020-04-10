@@ -1,6 +1,9 @@
 .p-banner{
-	// width: 1000px;
 	height: 345px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	// width: 1000px;
 	// margin-bottom: 64px;
 	&--bg{
 		background-image: url('../../assets/img/banner.png');

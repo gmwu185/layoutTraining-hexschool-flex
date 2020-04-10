@@ -1,15 +1,25 @@
 .l-header{
   // margin-bottom: 0px;
   &__barList{
-    // padding: 6px 12px;
+    display: flex;
+    justify-content: flex-end;
     font-size: 14px;
+    // padding: 6px 12px;
   }
-  &__nav__link{
-    display: inline-block;
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__link{
+      display: inline-block;
+    }
   }
 }
 
 .l-menu{
+  display: flex;
+  align-items: center;
+  min-width: 270px;
   // padding-right: 10px;
   &--link a{
     color: $primaryColor;

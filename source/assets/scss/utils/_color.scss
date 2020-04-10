@@ -2,8 +2,23 @@
 /* text-colors
 -------------------------------------------------- */
 .u-textC{
+	&--primary{
+		color: $primaryColor;
+	}
 	&--primaryDark{
 		color: $primaryDarkColor;
+	}
+	&--primaryDimgray{
+		color: $primaryDimgrayColor;
+	}
+	&--notice{
+		color: $noticeColor;
+	}
+	&--black{
+		color: $blackColor;
+	}
+	&--lightGray{
+		color: $lightGrayColor;
 	}
 	&--white{
 		color: $whiteColor;
@@ -15,6 +30,15 @@
 /* Subsection-color
 -------------------------------------------------- */
 .u-bg{
+	&--primary{
+		background-color: $primaryColor;
+	}
+	&--primaryDark{
+		background-color: $primaryDarkColor;
+	}
+	&--primaryDimgray{
+		background-color: $primaryDimgrayColor;
+	}
 	&--black{
 		background-color: $blackColor;
 	}

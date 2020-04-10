@@ -14,6 +14,7 @@
 // .formGroup{
 // 	margin-bottom: 15px;
 // }
-.textarea-resizeNone{
+.form-textarea--resizeNone{
 	resize : none;
+	min-height: 100px;
 }

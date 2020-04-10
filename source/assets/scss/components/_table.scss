@@ -5,11 +5,21 @@
 		text-align-last: left;
 		background-color: $lightGrayColor;
 	}
-	&__thead__tr, &__tbody__tr{
-		border-top: 1px solid $gainsBoroColor;
-		border-bottom: 1px solid $gainsBoroColor;
-	}
+	
 	&__thead__tr__th, &__tbody__tr__td{
-		// padding: 8px 25px;
+		padding: 2px 10px;
+	}
+
+	&--border{
+		.c-table__thead__tr, .c-table__tbody__tr{
+			border-top: 1px solid $gainsBoroColor;
+			border-bottom: 1px solid $gainsBoroColor;
+		}
+	}
+
+	&--sizeM{
+		.c-table__thead__tr__th, .c-table__tbody__tr__td{
+			padding: 8px 25px;
+		}
 	}
 }

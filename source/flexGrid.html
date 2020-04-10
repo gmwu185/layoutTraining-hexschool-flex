@@ -10,8 +10,8 @@
   <body class="u-minH--100vh u-d-flex u-alignItems--center u-justifyContent--center u-py--20 u-bg--lightGray">
     <div class="l-fg-container l-fg-colsSpacing-p--3 u-bg--white u-boxShadow u-text-align--center u-py--20">
       
-      <h2 class="h2 u-my--20 u-textC--primaryDark">flex 自動針對子元件等分 (後方不帶 -- 等分數值)</h2>
-
+      <h2 class="h2 u-my--20 u-bg--primary u-textC--white">flexGrid 自動針對內元件等分</h2>
+      <p class="u-mb--20">後方不帶 -- 等分數值</p>
       <ol class="l-fg-row">
         <li class="l-fg-col u-bg--gainsBoro u-border u-border--black">
           <div class="u-bg--lightGray">l-fg-col</div>
@@ -42,8 +42,8 @@
       </ol>
       <!-- /.l-fg-row -->
       
-      <hr class="u-my--20 u-border--lightGray">
-      <h2 class="h2 u-my--20 u-textC--primaryDark">透過等分操作</h2>
+      <hr class="u-my--30 u-border--lightGray">
+      <h2 class="h2 u-my--20 u-bg--primary u-textC--white">flexGrid 內元件設定等分寬度與自動等分</h2>
 
       <ol class="l-fg-row">
         <li class="l-fg-col--2-1 u-bg--gainsBoro u-border u-border--black">
@@ -378,16 +378,16 @@
       </ol>
       <!-- /.l-fg-row -->
 
-      <hr class="u-my--20 u-border--lightGray">
-      <h2 class="h2 u-my--20 u-textC--primaryDark">操作子元件空間</h2>
+      <hr class="u-my--30 u-border--lightGray">
+      <h2 class="h2 u-my--20 u-bg--primary u-textC--white">flexGrid 內元件空間、排版與定位</h2>
       <p class="u-mb--15">透過後代選擇的方式將啟用的 .l-fg-colsSpacing-m 與 .l-fg-colsSpacing-p 用於祖、父層，可以將所有使用 .l-fg-row 樣式名受到操作，<br> 
         數值單位 px 比重由大到小，小的數值比重要重，例如 margin 0px 主要用於清出定位或是佔位空間使用, 將比重處理成倒序。</p>
-      <p class="u-mb--15">子代比重透過 !important 優先，會重於孫代的樣式比重。</p>
-      <p class="u-mb--15">級數由 10-0 共 11 級，每級為 4px 為一個基數。</p>
+      <p>子代比重透過 !important 優先，會重於孫代的樣式比重。</p>
+      <p class="u-mb--15 u-textC--notice">級數由 10-0 共 11 級，每級 4px 為一個基數。</p>
       
       <div class='u-mb--64'>
-        <h3 class="h3 u-my--15">所有子元件透過 margin left 與 right 的 12 px 自動於 .l-fg-row 內平均寬度</h3>
-        <p> .l-fg-row 裡的子元件透過 .l-fg-col 元件數產生自動的格線數，在透過 margin 的個定數值佔住容器中的固定寬度後，<br>  .l-fg-col 自動元件會動計算子元件中的寬度自動平均寬度。</p>
+        <h3 class="h3 u-my--15 u-textC--primaryDark">所有內元件透過 margin left 與 right 的 12 px 自動於 .l-fg-row 內平均寬度</h3>
+        <p> .l-fg-row 裡的內元件透過 .l-fg-col 元件數產生自動的格線數，在透過 margin 的個定數值佔住容器中的固定寬度後，<br>  .l-fg-col 自動元件會動計算內元件中的寬度自動平均寬度。</p>
         <p>margin 無法使用 auto 來推出空間操作定位效果。</p>
   
         <ol class="l-fg-row l-fg-colsSpacing-mx--3 u-my--20">
@@ -420,8 +420,8 @@
       </div>
 
       <div class='u-mb--64'>
-        <h3 class="h3 u-my--15">透過後代選擇後蓋前特性，清除祖層元件空間設定</h3>
-        <p>使用 .l-fg-colsSpacing-p--0 與 .l-fg-colsSpacing-m--0 清除子元件空間，概念類工具類型的樣式使用。</p>
+        <h3 class="h3 u-my--15 u-textC--primaryDark">透過後代選擇後蓋前特性，清除祖層元件空間設定</h3>
+        <p>使用 .l-fg-colsSpacing-p--0 與 .l-fg-colsSpacing-m--0 清除內元件空間，概念類工具類型的樣式使用。</p>
 
         <ol class="l-fg-row l-fg-colsSpacing-p--0 u-my--20">
           <li class="l-fg-col--12-1 u-bg--gainsBoro u-border u-border--black">
@@ -487,7 +487,7 @@
         </ol>
         <!-- /.l-fg-row -->
 
-        <p>透過 .l-fg-colsSpacing-p--XX 調整子元件的空間</p>
+        <p>透過 .l-fg-colsSpacing-p--XX 調整內元件的空間</p>
         <ol class="l-fg-row l-fg-colsSpacing-p--6 u-my--20">
           <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
             <div class="u-bg--lightGray">
@@ -548,8 +548,8 @@
 
       <div class="u-mb--64">
 
-        <h3 class="h3 u-my--15">指定子元件等分 margin 使用</h3>
-        <p>子元件等分 margin 配合使用無法讓子元件寬度自動，子元件寬度計算已有數值操作，操過父層容器會自動下移。</p>
+        <h3 class="h3 u-my--15 u-textC--primaryDark">指定內元件等分 margin 使用</h3>
+        <p>內元件等分 margin 配合使用無法讓內元件寬度自動，內元件寬度計算已有數值操作，超過父層容器寬度會自動下移。</p>
 
         <ol class="l-fg-row l-fg-colsSpacing-m--3 u-my--20">
           <li class="l-fg-col--5-1 u-bg--gainsBoro u-border u-border--black">
@@ -626,20 +626,14 @@
         <!-- /.l-fg-row -->
       </div>
 
-      <hr class="u-border--lightGray my20">
-      <h2 class="h2 u-my--20 u-textC--primaryDark">等分計算公式</h2>
-      <p>等分計算公式，以 10 等分為例：<br>
-        容器可用總寬度 / 總等分 = 單分寬度<br>
+      <hr class="u-my--30 u-border--lightGray">
+      <h2 class="h2 u-my--20 u-bg--primary u-textC--white">等分計算公式</h2>
+      <h3 class="h3 u-my--15 u-textC--primaryDark">等分計算公式，以 10 等分為例</h3>
+      <p>容器可用總寬度 / 總等分 = 單等分寬度<br>
         1000/10=100 <br><br> 
-        
-        單分寬度 * (總等分-1) = 最大等分寬度 <br>
+        單等分寬度 * (總等分-1) = 最大等分寬度<br>
         100*(10-1)=900</p>
-
-      
-
     </div>
     <!-- /.l-fg-container -->
-
-    
   </body>
 </html>
