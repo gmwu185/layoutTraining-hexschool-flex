@@ -3877,7 +3877,7 @@ a {
 /* 100% Width Columns on Small Screens */
 @media (max-width: 850px) {
   [class^="l-fg-col"] {
-    flex: 0 0 100%;
+    flex: 1 1 calc(100% - 4px);
     max-width: 100%;
   }
 }
